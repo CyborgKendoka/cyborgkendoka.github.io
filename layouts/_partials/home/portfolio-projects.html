@@ -1,39 +1,103 @@
+{{ $projects := where site.RegularPages "Section" "projects" }}
+
+{{ $featured := where $projects "Params.featured" true }}
+
+{{ $games := where $projects "Params.projectType" "game" }}
+{{ $games = where $games "Params.featured" "ne" true }}
+
+{{ $gameJams := where $projects "Params.projectType" "gamejam" }}
+
+{{ $personal := where $projects "Params.projectType" "personal" }}
+
+
 <section class="mt-16">
 
-    <h1 class="text-3xl font-bold mb-8">
+    <h1 class="mb-8 text-3xl font-bold">
         Projects
     </h1>
 
-    <h2 class="text-2xl font-semibold">
-        Featured Project
-    </h2>
 
-    <p>
-        My featured game will go here.
-    </p>
+    <!-- Featured Project -->
+    {{ with index $featured 0 }}
 
-    <h2 class="text-2xl font-semibold mt-12">
-        Game Projects
-    </h2>
+    <section class="mb-16">
 
-    <p>
-        My game projects will go here.
-    </p>
+        <h2 class="mb-6 text-2xl font-semibold">
+            Featured Project
+        </h2>
 
-    <h2 class="text-2xl font-semibold mt-12">
-        Game Jam Projects
-    </h2>
+        <div class="grid grid-cols-1">
+            {{ partial "content/project-card.html" (dict "page" .) }}
+        </div>
 
-    <p>
-        My game jam projects will go here.
-    </p>
+    </section>
 
-    <h2 class="text-2xl font-semibold mt-12">
-        Personal Projects
-    </h2>
+    {{ end }}
 
-    <p>
-        My personal projects will go here.
-    </p>
+
+    <!-- Game Projects -->
+    {{ if $games }}
+
+    <section class="mb-16">
+
+        <h2 class="mb-6 text-2xl font-semibold">
+            Game Projects
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+            {{ range $games }}
+            {{ partial "content/project-card.html" (dict "page" .) }}
+            {{ end }}
+
+        </div>
+
+    </section>
+
+    {{ end }}
+
+
+    <!-- Game Jam Projects -->
+    {{ if $gameJams }}
+
+    <section class="mb-16">
+
+        <h2 class="mb-6 text-2xl font-semibold">
+            Game Jam Projects
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+            {{ range $gameJams }}
+            {{ partial "content/project-card.html" (dict "page" .) }}
+            {{ end }}
+
+        </div>
+
+    </section>
+
+    {{ end }}
+
+
+    <!-- Personal Projects -->
+    {{ if $personal }}
+
+    <section class="mb-16">
+
+        <h2 class="mb-6 text-2xl font-semibold">
+            Personal Projects
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+            {{ range $personal }}
+            {{ partial "content/project-card.html" (dict "page" .) }}
+            {{ end }}
+
+        </div>
+
+    </section>
+
+    {{ end }}
 
 </section>

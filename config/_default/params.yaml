@@ -57,7 +57,7 @@ toc:
   pinned: false # Side mode only: keep the TOC panel always visible when there is enough space
 
 # Default color scheme
-colorScheme: "default"
+colorScheme: "amethyst"
 themes:
   default:
     name: "Default"

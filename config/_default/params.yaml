@@ -1,11 +1,11 @@
 # Basic site info with SEO
-description: "A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design."
-keywords: ["Hugo", "Blog", "Theme", "Technology", "Programming"]
-defaultAuthor: "Hugo Narrow"
+description: "Game Development portfolio of Sontje Mrosla"
+keywords: ["Sontje", "Mrosla","Programming"]
+defaultAuthor: "Sontje Mrosla"
 language: "en"
-shortName: "Hugo Narrow" # PWA
+shortName: "Sontje Mrosla" # PWA
 images:
-  - "/images/og-default.avif"
+  - "/images/portfolio-preview.png"
 
 # Favicon
 favicon:
@@ -13,8 +13,8 @@ favicon:
 
 # Author info
 author:
-  name: "Hugo Narrow"
-  title: "A Clean and Minimal Hugo Theme"
+  name: "Sontje Mrosla"
+  title: "Game Development portfolio of Sontje Mrosla"
   description: "Focused on content and user experience."
   avatar: "/images/avatar.svg"
   social:

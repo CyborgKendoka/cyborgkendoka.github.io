@@ -1,7 +1,7 @@
 ---
 dismissible: true
 date: 2025-12-31
-title: "Home"
+title: "Sontje Mrosla | Game Developer"
 author:
   name: "Sontje Mrosla"
   title: "Game Developer"

@@ -32,24 +32,17 @@ tags:
 
 Spores of Fortune is a serious game project aiming to teach players something about mushrooms during their playtime.
 We were a team of 4 bachelor students and 1 master student working on the project for 1 Semester.
-My roles in this project were Lead programmer and I shared the role of the game designer with another student.
+My roles in this project were **Lead programmer** and I shared the role of the game designer with another student.
 
 
 ## My Contribution
 
 I was responsible for:
 
-- procedural mushroom spawn behaviour
+- Procedural mushroom spawn behaviour
 - UI implementation
 - Game Design of the main loop and mechanics
 - WWise Setup for Soundie
+- Daycycle
 
-## Technical Highlights
-
-### procedural mushroom spawn behaviour
-
-Explain and maybe showcase some spawn behaviour here using a gif
-
-### UI implementation
-
-maybe some supporting gifs here aswell
+{{< youtube OcaZo-3C8XI >}}

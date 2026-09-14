@@ -22,22 +22,18 @@ tags:
 ## Overview
 
 Mermade is an indie game that we developed the demo for in 1 semester, as a team of 6.
-My role in the project was sole programmer.
+My role in the project was **sole programmer**.
 
 
 ## My Contribution
 
 I was responsible for:
 
-- sound
-- movement mechanics
+- Movement mechanics
+
+![swim](swim.gif)
 - Procedural hand and tail movement
 
-## Technical Highlights
 
-### movement mechanics
-Explain and maybe showcase some spawn behaviour here using a gif
-
-### Procedural hand and tail movement
-
-maybe some supporting gifs here aswell
+![crawl](crawl.gif)
+- Enemy AI

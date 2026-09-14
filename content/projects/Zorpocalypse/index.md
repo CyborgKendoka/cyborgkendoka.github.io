@@ -20,24 +20,17 @@ tags:
 ## Overview
 
 Zorpocalypse was a semester Project, were we tried to make a "friendslop" game. 
-We were a team of 6 and my role in the project was sole programmer.
+We were a team of 6 and my role in the project was **sole programmer**.
 
 {{< youtube 8nUzjG9wFIY >}}
 
 ## My Contribution
 
-I was responsible for:
+I was responsible for kinda everything, as I was the only programmer but these are the highlights:
 
-- Network programming
-- interaction system
-- basic crafting/cooking system
+- Network programming with FishNet
+- Interaction system
+- Basic crafting/cooking system
+- 2 Phase game loop
 
-## Technical Highlights
-
-### procedural mushroom spawn behaviour
-
-Explain and maybe showcase some spawn behaviour here using a gif
-
-### UI implementation
-
-maybe some supporting gifs here aswell
+{{< youtube t21fCz4Ajxo >}}

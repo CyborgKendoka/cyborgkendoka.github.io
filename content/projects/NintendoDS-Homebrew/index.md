@@ -21,17 +21,12 @@ tags:
 
 I really love the Nintendo Ds system and wanted to try making my own homebrew game.
 Model is from someone else.
+
 Project is still in progress
 
 ## My Contribution
 
+- Loading an animated 3D Model
+- Character Controller
 
-## Technical Highlights
-
-### procedural mushroom spawn behaviour
-
-Explain and maybe showcase some spawn behaviour here using a gif
-
-### UI implementation
-
-maybe some supporting gifs here aswell
+![Gameplay demonstration](frieren.gif)

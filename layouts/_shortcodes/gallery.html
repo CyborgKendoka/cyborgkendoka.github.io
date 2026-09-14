@@ -1,0 +1,144 @@
+<style>
+    .portfolio-gallery-track {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+        .portfolio-gallery-track::-webkit-scrollbar {
+            display: none;
+        }
+</style>
+
+<div style="
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+">
+
+    <!-- Previous button -->
+    <button type="button"
+            aria-label="Previous screenshot"
+            onclick="
+        const track = this.parentElement.querySelector('[data-gallery-track]');
+        track.scrollBy({
+            left: -track.clientWidth,
+            behavior: 'smooth'
+        });
+    "
+            style="
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 9999px;
+
+        background: rgba(0,0,0,0.65);
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    ">
+        {{partial "features/icon.html" (dict
+        "name" "chevron-left"
+        "size" "md"
+        "ariaLabel" ""
+    )
+        }}
+    </button>
+
+
+    <!-- Images -->
+    <div data-gallery-track
+         class="portfolio-gallery-track"
+         style="
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            border-radius: 0.75rem;
+        ">
+
+        {{ range .Params }}
+
+        {{ $image := $.Page.Resources.GetMatch . }}
+
+        {{ if $image }}
+
+        <div style="
+                    flex: 0 0 100%;
+                    width: 100%;
+                    scroll-snap-align: start;
+                ">
+
+            <img src="{{ $image.RelPermalink }}"
+                 alt="Game screenshot"
+                 loading="lazy"
+                 style="
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            border-radius: 0.75rem;
+                        ">
+
+        </div>
+
+        {{ else }}
+
+        {{ warnf "Gallery image '%s' could not be found" . }}
+
+        {{ end }}
+
+        {{ end }}
+
+    </div>
+
+
+    <!-- Next button -->
+    <button type="button"
+            aria-label="Next screenshot"
+            onclick="
+            const track = this.parentElement.querySelector('[data-gallery-track]');
+            track.scrollBy({
+                left: track.clientWidth,
+                behavior: 'smooth'
+            });
+        "
+            style="
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+
+            width: 3rem;
+            height: 3rem;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 9999px;
+
+            background: rgba(0,0,0,0.65);
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+        ">
+        {{
+ partial "features/icon.html" (dict
+        "name" "chevron-right"
+        "size" "md"
+        "ariaLabel" ""
+    )
+        }}
+    </button>
+
+</div>

@@ -20,14 +20,14 @@
     <!-- Featured Project -->
     {{ with index $featured 0 }}
 
-    <section class="mb-16">
+   <section style="margin-bottom: 3rem;">
 
         <h2 class="mb-6 text-2xl font-semibold">
             Featured Project
         </h2>
 
         <div class="grid grid-cols-1">
-            {{ partial "content/project-card.html" (dict "page" .) }}
+            {{ partial "content/project-card.html" (dict "page" . "large" true) }}
         </div>
 
     </section>
@@ -38,7 +38,7 @@
     <!-- Game Projects -->
     {{ if $games }}
 
-    <section class="mb-16">
+    <section style="margin-bottom: 3rem;">
 
         <h2 class="mb-6 text-2xl font-semibold">
             Game Projects
@@ -60,7 +60,7 @@
     <!-- Game Jam Projects -->
     {{ if $gameJams }}
 
-    <section class="mb-16">
+    <section style="margin-bottom: 3rem;">
 
         <h2 class="mb-6 text-2xl font-semibold">
             Game Jam Projects
@@ -82,7 +82,7 @@
     <!-- Personal Projects -->
     {{ if $personal }}
 
-    <section class="mb-16">
+    <section style="margin-bottom: 3rem;">
 
         <h2 class="mb-6 text-2xl font-semibold">
             Personal Projects

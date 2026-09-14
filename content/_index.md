@@ -21,5 +21,3 @@ author:
       url: "mailto:mrosla.sontje@gmail.com"
       icon: "email"
 ---
-
-🎉 **Site Redesign!** We've completely revamped our website with faster loading speeds, a beautiful new interface, and smoother user experience. Welcome to explore the new features!

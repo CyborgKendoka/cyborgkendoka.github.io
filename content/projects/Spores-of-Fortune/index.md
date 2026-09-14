@@ -4,7 +4,7 @@ draft: false
 description: "A mushroom picking Simulation game that teaches you how to identify a selection of different real mushrooms, commonly found in Germany. As well as letting the player sell them in their own little shop"
 summary: "A mushroom picking Simulation game that teaches you how to identify a selection of different real mushrooms."
 
-featured: true
+featured: false
 projectType: "game"
 
 cover: "cover.png"
@@ -14,6 +14,7 @@ tags:
   - C#
   - Programming
   - Game Design
+  - 3D
 
 ---
 ## Check out the game on Steam!
@@ -29,7 +30,7 @@ tags:
 
 ## Overview
 
-Spores of Fortune is a serious game project aiming to teach players something during their playtime.
+Spores of Fortune is a serious game project aiming to teach players something about mushrooms during their playtime.
 We were a team of 4 bachelor students and 1 master student working on the project for 1 Semester.
 My roles in this project were Lead programmer and I shared the role of the game designer with another student.
 

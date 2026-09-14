@@ -24,12 +24,13 @@ tags:
 Mermade is an indie game that we developed the demo for in 1 semester, as a team of 6.
 My role in the project was **sole programmer**.
 
+{{< youtube 7PBT30L0Fcw >}}
 
 ## My Contribution
 
-I was responsible for:
+I was mainly responsible for:
 
-- Movement mechanics
+- Character controller
 
 ![swim](swim.gif)
 - Procedural hand and tail movement
@@ -37,3 +38,6 @@ I was responsible for:
 
 ![crawl](crawl.gif)
 - Enemy AI
+
+
+![enemy](enemy.gif)

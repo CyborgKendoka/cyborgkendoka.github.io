@@ -4,8 +4,8 @@ date: 2025-12-31
 title: "Sontje Mrosla | Game Developer"
 author:
   name: "Sontje Mrosla"
-  title: "Game Developer"
-  description: "Hi I am a game dev student from Germany, currently looking for an internship!"
+  title: "Gameplay Programmer"
+  description: "Hi I am a game dev student from Germany, currently looking for a mandatory internship in programming!"
   avatar: "/images/me.jpg"
   social:
     - name: "GitHub"

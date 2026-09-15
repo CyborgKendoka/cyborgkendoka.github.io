@@ -39,7 +39,7 @@ My roles in this project were **Lead programmer** and I shared the role of the g
 
 I was responsible for:
 
-- Procedural mushroom spawn behaviour
+- Procedural mushroom spawn behaviour [(code example)](https://github.com/CyborgKendoka/Sample-code)
 - UI implementation
 - Game Design of the main loop and mechanics
 - WWise Setup for Soundie

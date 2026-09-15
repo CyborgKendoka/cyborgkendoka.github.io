@@ -38,5 +38,5 @@ Wanted to use it to try out Godot engine :)
 ## My Contribution
 
 - NPC AI
-- Puzzle Algorythm
+- Puzzle Algorithm
 - Player Controller

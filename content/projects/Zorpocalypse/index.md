@@ -1,8 +1,8 @@
 ---
 title: "Zorpocalypse"
 draft: false
-description: "A friendslop game, where your alien planet is under attack and you got to save yourself and your friends, by bringing enough ressources into your bunker."
-summary: "A friendslop game, where your alien planet is under attack and you got to save yourself and your friends, by bringing enough ressources into your bunker."
+description: "A friendslop game, where your alien planet is under attack and you got to save yourself and your friends, by bringing enough resources into your bunker."
+summary: "A friendslop game, where your alien planet is under attack and you got to save yourself and your friends, by bringing enough resources into your bunker."
 
 featured: false
 projectType: "game"
@@ -26,7 +26,7 @@ We were a team of 6 and my role in the project was **sole programmer**.
 
 ## My Contribution
 
-I was responsible for kinda everything, as I was the only programmer but these are the highlights:
+As the sole progammer I was responsible for all major gameplay systems:
 
 - Network programming with FishNet
 - Interaction system
